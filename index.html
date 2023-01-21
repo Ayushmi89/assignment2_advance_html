@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        student-registration.com
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="/action_page.php" target="block">
+        <div class="form">
+            <label for="Name">Name: </label>
+            <input type="text" id="name" class="name" required><br>
+
+            <label style="margin-top: 6px" for="phone">Phone No: </label>
+            <input type="tel" id="phone" class="phone" required><br>
+
+            <label style="margin-top: 6px" for="DOB">Date of Birth: </label>
+            <input type="date" id="dob" class="dob" required><br>
+
+            <label style="margin-top: 6px" for="address">Address: </label>
+            <input style="width: 200px; height: 60px; margin-top: 6px;" type="text" id="address" class="address" required><br>
+
+            <label for="gender">Gender: </label>
+            <span><input type="radio" id="male" name="gender" value="male">
+        <label style="text-align: left; display: inline; " for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label  style="display: inline; text-align: left;" for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label  style="display: inline; text-align: left;" for="other">Other</label></span><br>
+
+            <label style="display: inline;  margin-top: 6px;" for="Name">City: </label>
+            <select style="display: inline;  margin-top: 6px;" id="select" name="select">
+            <option value="select">Select city</option>
+            <option value="select">Delhi</option>
+            <option value="select">Mumbai</option>
+            <option value="select">Punjab</option>
+            <option value="select">Goa</option>
+            <option value="select">UP</option>
+        </select><br>
+
+            <div>
+                <label for="hobbies">Hobbies: </label><br>
+
+                <input type="checkbox" id="hobby1" name="hobby" value="reading">
+                <label for="hobby1">Reading</label><br>
+
+                <input type="checkbox" id="hobby2" name="hobby" value="watching">
+                <label for="hobby2">Watching TV</label><br>
+
+                <input type="checkbox" id="hobby3" name="hobby" value="sports">
+                <label for="hobby3">Playing sports</label><br>
+
+                <input type="checkbox" id="hobby4" name="hobby" value="music">
+                <label for="hobby4">Listening to music</label><br>
+            </div><br>
+
+            <button>Submit</button>
+            <button>Reset</button>
+
+            <br>
+
+            <table style="border: 3px solid black; width: 100%; text-align: center; margin-top: 20px;">
+                <thead>
+                    <tr>
+                        <th>SNo</th>
+                        <th>Name</th>
+                        <th>Phone No</th>
+                        <th>Gender</th>
+                        <th>City</th>
+                        <th>Hobbies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ayush</td>
+                        <td>555-555-5555</td>
+                        <td>Male</td>
+                        <td>Delhi</td>
+                        <td>Reading, Playing sports</td>
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Kartik</td>
+                        <td>555-555-5556</td>
+                        <td>Male</td>
+                        <td>Punjab</td>
+                        <td>Watching TV, Listening to music</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>kanak</td>
+                        <td>555-555-5557</td>
+                        <td>Female</td>
+                        <td>UP</td>
+                        <td>Playing guitar, Traveling</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+
+</body>
+
+</html>
